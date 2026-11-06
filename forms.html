@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: "Eater", serif;
+        }
+
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #800080;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"],
+        input[type="date"],
+        select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            background-color: #800080;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6a006a;
+        }
+
+        .full-width {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- text, email, password, number, date, radio, checkbox, select, submit-->
+    <form>
+        <br>
+        <label for="full_name">Names</label>
+        <input class="full-width" type="text" required id="full_name" placeholder="Jane Doe">
+        <br>
+        <label for="email">Email</label>
+        <input class="full-width" type="email" required id="email" placeholder="jane.doe@example.com">
+        <br>
+        <label for="password">Password</label>
+        <input class="full-width" type="password" required id="password" placeholder="********">
+        <br>
+
+        <label for="weight">Weight</label>
+        <input class="full-width" type="number" min="30" max="300" step="0.1" required id="weight"
+            placeholder="weight in kg">
+        <br>
+        <label for="date_of_birth">Date of Birth</label>
+        <input class="full-width" type="date" min="1900-01-01" max="2008-12-31" required id="date_of_birth">
+
+        <!-- name must be the same for radio buttons -->
+        <br>
+        <label>select your gender</label>
+        <input type="radio" id="f" name="gender" value="female" required>
+        <label for="f">Female</label>
+        <br>
+        <input type="radio" id="m" name="gender" value="male" required>
+        <label for="m">Male</label>
+        <br>
+        <hr>
+        <input type="checkbox" id="x" name="food">
+        <label for="x">Pizza</label>
+        <br>
+
+        <input type="checkbox" id="y" name="food">
+        <label for="y">Burger</label>
+        <br>
+
+        <input type="checkbox" id="z" name="food">
+        <label for="z">Pasta</label>
+
+
+        <br>
+        <select>
+            <option value="1">Mombasa</option>
+            <option value="2">Nairobi</option>
+            <option value="3">Kisumu</option>
+            <option value="4">Busia</option>
+            <option value="5">Migori</option>
+
+
+
+
+        </select>
+
+
+
+
+
+
+
+
+        <button>submit</button>
+    </form>
+
+</body>
+
+</html>
